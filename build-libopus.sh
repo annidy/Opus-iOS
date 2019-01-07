@@ -22,8 +22,8 @@
 ###########################################################################
 #  Choose your libopus version and your currently-installed iOS SDK version:
 #
-VERSION="1.1.3"
-SDKVERSION="10.2"
+VERSION="1.2.1"
+SDKVERSION="12.0"
 MINIOSVERSION="8.0"
 
 ###########################################################################
@@ -39,8 +39,8 @@ if [ "${DEBUG}" == "true" ]; then
     OPT_LDFLAGS=""
     OPT_CONFIG_ARGS="--enable-assertions --disable-asm"
 else
-    OPT_CFLAGS="-Ofast -flto -g"
-    OPT_LDFLAGS="-flto"
+    OPT_CFLAGS="-Ofast  -g"
+    OPT_LDFLAGS=""
     OPT_CONFIG_ARGS=""
 fi
 
